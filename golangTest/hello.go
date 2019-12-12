@@ -18,7 +18,7 @@ func main(){
 	var d [5] int
 	var e [] int
 	var f * int
-	var v1 int = 5
+	var v1 int = 4
 	var  v2 = 3
 	v3 := 5
 	v1,v2 = v2,v1
