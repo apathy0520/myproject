@@ -5,6 +5,9 @@ import (
 )
 
 func main() {
+	test()
+}
+func test(){
 	a := [...]int{1, 2, 3, 4, 5, 6, 7}
 	fmt.Printf("len and cap of array %v is: %d and %d\n", a, len(a), cap(a))
 	fmt.Printf("item in array: %v is:", a)
@@ -31,11 +34,11 @@ func main() {
 
 	fmt.Println()
 
-	//ÄÚÖÃº¯Êýmake()ÓÃÓÚ´´½¨ÇÐÆ¬¡¢Ó³ÉäºÍÍ¨µÀ¡£µ±ÓÃÓÚ´´½¨Ò»¸öÇÐÆ¬Ê±£¬
-	//Ëü»á´´½¨Ò»¸öÒþ²ØµÄ³õÊ¼»¯ÎªÁãÖµµÄÊý×é£¬È»ºó·µ»ØÒ»¸öÒýÓÃ¸ÃÒþ²ØÊý×éµÄÇÐÆ¬¡£
-	//¸ÃÒþ²ØµÄÊý×éÓë Go ÓïÑÔÖÐµÄËùÓÐÊý×éÒ»Ñù£¬¶¼ÊÇ¹Ì¶¨³¤¶È£¬Èç¹ûÊ¹ÓÃµÚÒ»ÖÖÓï·¨´´½¨£¬ÄÇÃ´Æä³¤¶ÈÎªÇÐÆ¬µÄÈÝÁ¿capacity£»
-	//Èç¹ûÊÇµÚ¶þÖÖÓï·¨£¬ÄÇÃ´Æä³¤¶È¼ÇÎªÇÐÆ¬µÄ³¤¶Èlength¡£Ò»¸öÇÐÆ¬µÄÈÝÁ¿¼´ÎªÒþ²ØÊý×éµÄ³¤¶È£¬¶øÆä³¤¶ÈÔòÎª²»³¬¹ý¸ÃÈÝÁ¿µÄÈÎÒâÖµ¡£
-	//ÁíÍâ¿ÉÒÔÍ¨¹ýÄÚÖÃµÄº¯Êýappend()À´Ôö¼ÓÇÐÆ¬µÄÈÝÁ¿¡£
+	//å†…ç½®å‡½æ•°make()ç”¨äºŽåˆ›å»ºåˆ‡ç‰‡ã€æ˜ å°„å’Œé€šé“ã€‚å½“ç”¨äºŽåˆ›å»ºä¸€ä¸ªåˆ‡ç‰‡æ—¶ï¼Œ
+	//å®ƒä¼šåˆ›å»ºä¸€ä¸ªéšè—çš„åˆå§‹åŒ–ä¸ºé›¶å€¼çš„æ•°ç»„ï¼Œç„¶åŽè¿”å›žä¸€ä¸ªå¼•ç”¨è¯¥éšè—æ•°ç»„çš„åˆ‡ç‰‡ã€‚
+	//è¯¥éšè—çš„æ•°ç»„ä¸Ž Go è¯­è¨€ä¸­çš„æ‰€æœ‰æ•°ç»„ä¸€æ ·ï¼Œéƒ½æ˜¯å›ºå®šé•¿åº¦ï¼Œå¦‚æžœä½¿ç”¨ç¬¬ä¸€ç§è¯­æ³•åˆ›å»ºï¼Œé‚£ä¹ˆå…¶é•¿åº¦ä¸ºåˆ‡ç‰‡çš„å®¹é‡capacityï¼›
+	//å¦‚æžœæ˜¯ç¬¬äºŒç§è¯­æ³•ï¼Œé‚£ä¹ˆå…¶é•¿åº¦è®°ä¸ºåˆ‡ç‰‡çš„é•¿åº¦lengthã€‚ä¸€ä¸ªåˆ‡ç‰‡çš„å®¹é‡å³ä¸ºéšè—æ•°ç»„çš„é•¿åº¦ï¼Œè€Œå…¶é•¿åº¦åˆ™ä¸ºä¸è¶…è¿‡è¯¥å®¹é‡çš„ä»»æ„å€¼ã€‚
+	//å¦å¤–å¯ä»¥é€šè¿‡å†…ç½®çš„å‡½æ•°append()æ¥å¢žåŠ åˆ‡ç‰‡çš„å®¹é‡ã€‚
 
 	s2 := make([]int, 10, 20)
 	s2[4] = 5
