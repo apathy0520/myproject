@@ -58,6 +58,8 @@ func main(){
 			fmt.Println("success:", r)
 		}
 	}
+	fmt.Println("deferTest:")
 	fmt.Println(deferTest())
+	fmt.Println("deferTest2:")
 	fmt.Println(deferTest2())
 }
